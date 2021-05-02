@@ -11,17 +11,17 @@ public class Car {
 		this.name = name;
 	}
 
-	public static void go(int i) {
-		// TODO Auto-generated method stub
-		
-	}
-
 	public static boolean nameLegnthValid10(String carname) {
 		if(carname.length() >= MIN_LENGTH && carname.length() <= MAX_LENGTH ) {
 			return true;
 		}
 		return false;
 		
+	}
+
+	public Object race(int no) {
+		// TODO Auto-generated method stub
+		return CarStatus.GO;
 	}
 
 }

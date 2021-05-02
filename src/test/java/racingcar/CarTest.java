@@ -14,4 +14,10 @@ class CarTest {
 		assertFalse(Car.nameLegnthValid10("usercar"));
 	}
 	
+	@Test
+	@DisplayName("전진하기 테스트")
+	void go() {
+		Car user = new Car("user1");
+		assertTrue(user.race(3).equals(CarStatus.GO));
+	}
 }
